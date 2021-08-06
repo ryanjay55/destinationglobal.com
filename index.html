@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+
+<body>
+	<header class="header">
+			<div class="front1-container">
+				<div class="fcon">
+					<img src="images/logo.png" alt="logo">
+					<span><i class="fas fa-search"></i></span>
+					<input  type="search" name="search">
+				</div>
+			</div>
+
+			<div class="front2-container">
+				<nav>
+					<ul>
+
+						<li><a href="frontpage.html">Destination Global</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact-us.html">Contact Us</a></li>
+						<li><a href="#" style="color: #000;border-bottom: 5px solid #000;">Login</a></li>
+						<li><a href="signup.html">Sign up</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+	<div class="main-container">
+		<div class="sub-container">
+			<div class="container">
+				<img src="images/logo.png" alt="circle">
+				<h1>Destination Global</h1>
+				<p>Please enter your username and password!</p>
+			</div>
+
+			<div class="container-form">
+				<form  class="login">
+					<input type="text" placeholder="Username">
+					<input type="password" placeholder="Password" id="myInput"	>
+					<div class="checkbox-label">
+						<input type="checkbox"onclick="myFunction()" class="checkbox"><label for="checkbox">Show Password</label>
+					</div>
+					<a href="home.html" class="loginbut">Login</a>
+					<a href="#" class="fb"><i class="fab fa-facebook"></i>Login on Facebook</a>
+					<a href="#" class="google" ><i class="fab fa-google"></i>Continue with Google</a>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+	<footer class="footer-sec">
+
+		<div class="footer-title">
+			<h2>Contact <span>Us</span></h2>
+			<p class="footerd-des">
+					Please get in touch and our contact support team will answer all your questions or suggestions.
+			</p>
+		</div>
+
+		<form class="footer-form">
+			<div class="footer-subcon">
+					<input class="form-name" type="text" name="name" placeholder="Your Name*">
+					<input  class="form-email" type="email" name="email" placeholder="Your Email*">
+
+					<textarea placeholder="Your Message*"></textarea>
+
+					<button type="submit">Submit</button>
+
+			</div>
+		</form>
+
+
+		<div class="fcopyright">
+			<p>Copyright &copy; 2021 Design By <span>Destination Global Team</span> </p>
+		</div>
+
+	</footer>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+</body>
+
+
+</html>

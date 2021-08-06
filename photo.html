@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Photo</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="background: #000">
+
+<header class="header">
+      <div class="front1-container">
+        <div class="fcon">
+          <img src="images/logo.png" alt="logo">
+          <span><i class="fas fa-search"></i></span>
+          <input  type="search" name="search">
+        </div>
+      </div>
+
+      <div class="front2-container">
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="world-map.html">World Map</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <div class="food-connav">
+      <nav class="food-nav">
+        <ul>
+          <li><a href="country.html" class="overview">overview</a></li>
+
+          <li><a href="food.html" >foods</a></li>
+
+          <li><a href="#">place to visit</a></li>
+
+          <li><a href="#">culture</a></li>
+
+          <li><a href="#" style="border-bottom: 5px solid #fff;">photo</a></li>
+
+          <li><a href="#">map</a></li>
+        </ul>
+      </nav>
+    </div>
+
+<div class="photo-con">
+    <div class="photo">
+        <img id="myImg" src="images/india.jpg" alt="India">
+
+        <img id="myImg1" src="images/dubai.jpg" alt="Dubai">
+    </div>
+      <!-- The Modal -->
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+</div>
+
+
+
+
+<script>
+
+var modal = document.getElementById("myModal");
+
+
+var img = document.getElementById("myImg");
+var img1 = document.getElementById("myImg1");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img1.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>

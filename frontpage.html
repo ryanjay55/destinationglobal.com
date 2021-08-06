@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Destination Global</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+</head>
+<body>
+
+
+		<header class="header">
+			<div class="front1-container">
+				<div class="fcon">
+					<img src="images/logo.png" alt="logo">
+					<span><i class="fas fa-search"></i></span>
+					<input  type="search" name="search">
+				</div>
+			</div>
+
+			<div class="front2-container">
+				<nav>
+					<ul>
+
+						<li><a href="#" style="color: #000;border-bottom: 5px solid #000;">Destination Global</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact-us.html">Contact Us</a></li>
+						<li><a href="index.html">Login</a></li>
+						<li><a href="signup.html">Sign up</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+
+			<div class="front-con">
+				<div class="front-title">
+					<h1 class="title">Let's Explore</h1>
+					<p class="description">Destination Global is a collection of countries that gives you information and knowledge about a particular area, it introduces the culture, food, people, and a place that nice to visit.</p>
+					<a href="index.html"  id="country">Log In</a>
+				</div>
+			</div>
+
+
+
+	<footer class="footer-sec" id="contact-us">
+
+		<div class="footer-title">
+			<h2>Contact <span>Us</span></h2>
+			<p class="footerd-des">
+			 	Please get in touch and our contact support team will answer all your questions or suggestions.
+			</p>
+		</div>
+
+		<form class="footer-form">
+			<div class="footer-subcon">
+					<input class="form-name" type="text" name="name" placeholder="Your Name*">
+					<input  class="form-email" type="email" name="email" placeholder="Your Email*">
+
+					<textarea placeholder="Your Message*"></textarea>
+
+					<button type="submit">Submit</button>
+
+			</div>
+		</form>
+
+
+		<div class="fcopyright">
+			<p>Copyright &copy; 2021 Design By <span>Destination Global Team</span> </p>
+		</div>
+
+	</footer>
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+
+		$(window).scroll(function(){
+			$(".front-title").css("opacity", 1 - $(window).scrollTop() / 250 )
+		});
+
+
+
+	</script>
+</body>
+</html>
